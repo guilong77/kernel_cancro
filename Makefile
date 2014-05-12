@@ -395,7 +395,9 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-sizeof-pointer-memaccess \
 		   -mno-unaligned-access \
 		   -fno-delete-null-pointer-checks \
-		   -pipe
+		   -pipe \
+		   -fstrict-aliasing \
+		   -Wstrict-aliasing=3
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__
