@@ -61,7 +61,11 @@
 #include <csrApi.h>
 
 //Number of items that can be configured
+<<<<<<< HEAD
 #define MAX_CFG_INI_ITEMS   320
+=======
+#define MAX_CFG_INI_ITEMS   512
+>>>>>>> 5e5d7646308a01ac48bdaa38cac48902f8195b6d
 
 // Defines for all of the things we read from the configuration (registry).
 

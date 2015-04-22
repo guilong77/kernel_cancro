@@ -7629,9 +7629,15 @@ static int wlan_hdd_cfg80211_del_station(struct wiphy *wiphy,
 static int wlan_hdd_cfg80211_add_station(struct wiphy *wiphy,
           struct net_device *dev, u8 *mac, struct station_parameters *params)
 {
+<<<<<<< HEAD
     hdd_adapter_t *pAdapter =  WLAN_HDD_GET_PRIV_PTR(dev);
     int status = -EPERM;
 #ifdef FEATURE_WLAN_TDLS
+=======
+    int status = -EPERM;
+#ifdef FEATURE_WLAN_TDLS
+    hdd_adapter_t *pAdapter =  WLAN_HDD_GET_PRIV_PTR(dev);
+>>>>>>> 5e5d7646308a01ac48bdaa38cac48902f8195b6d
     u32 mask, set;
     ENTER();
 
